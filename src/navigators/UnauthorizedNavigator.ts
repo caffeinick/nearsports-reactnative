@@ -1,12 +1,12 @@
 import { createStackNavigator } from 'react-navigation';
 
-import HomeScreen from '../screens/HomeScreen';
+import LandingScreen from '../screens/LandingScreen';
 
 export default createStackNavigator(
   {
-    Home: HomeScreen,
+    Landing: LandingScreen,
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Landing',
   },
 );
