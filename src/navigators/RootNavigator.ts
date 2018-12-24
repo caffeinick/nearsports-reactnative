@@ -1,14 +1,16 @@
 import { createSwitchNavigator } from 'react-navigation';
 
-import UnauthorizedModal from './UnauthorizedNavigator';
+import LoadingScreen from '../screens/LoadingScreen';
+import UnauthModal from './UnauthorizedNavigator';
 import HomeScreen from '../screens/HomeScreen';
 
 export default createSwitchNavigator(
   {
-    Unauthorized: UnauthorizedModal,
+    Loading: LoadingScreen,
+    Unauth: UnauthModal,
     Home: HomeScreen,
   },
   {
-    initialRouteName: 'Unauthorized',
+    initialRouteName: 'Loading',
   },
 );
